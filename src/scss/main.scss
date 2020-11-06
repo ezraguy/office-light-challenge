@@ -1,0 +1,155 @@
+.main{
+    
+    padding-top: 50px;
+    padding: 5% 15%;
+    position: relative;
+    
+    width: 100%;
+    z-index: 2;  
+       
+        .headerBackgroundImg{
+            position: absolute;
+            right: -500px;
+            top: -500px;
+           
+    }
+
+    .main-wrap{
+    display: flex;
+    position: relative;
+    width: 100%;
+        .main-content{
+            z-index: 20;
+            margin-top: 100px;
+            min-height: 300px;
+            align-items: center;
+        .main-title{
+ 
+                letter-spacing: 1px;
+                font-size: 34pt;
+               line-height: 50px;
+                padding-bottom: 10px;
+                max-width: 450px;
+                font-weight: bold;
+            
+        }
+        .main-text{ 
+                font-size: 12pt;
+                max-width: 60%;
+                color: #b6b6b8;  
+        }
+        .getStarted{
+            margin-top: 20px;
+            background-color: #5172FF;
+            color:white;
+            border-radius: 20px;
+            width: 130px;
+            height: 40px;
+        }
+    }
+    .main-img-wrap{
+
+        .main-img{
+            padding-top: 50px;
+            
+        }
+    }
+}
+
+    
+
+}
+
+
+
+@media screen and (max-width:1300px){
+    .main{
+        padding: 5% 5%;
+    }
+}
+
+
+@media screen and (max-width:992px){
+  
+
+    
+    .main{
+        padding: 5% 2%;
+     
+        .main-wrap{
+            .main-img{
+                padding-top: 100px;
+                max-width: 350px;
+            }
+            .main-content{
+                .main-title{
+                  
+
+                        font-size: 25pt;
+                    
+                }
+                .main-text{
+                    
+                        max-width: 100%;
+                    
+                }
+            }
+        }
+    }
+    
+
+
+}
+
+@media screen and (max-width:660px){
+  
+
+    
+    .main{
+        overflow: hidden;
+        padding: 5% 2%;
+        margin: 0 ;
+        .logo{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+       .headerBackgroundImg{
+           top: -100px;
+           width: 100%;
+           left: 0px;
+           right: 0px;
+       }
+        .main-wrap{
+            flex-direction: column-reverse;
+          text-align: center;
+            .main-img{
+                margin-top: 50px;
+                padding-top: 100px;
+                max-width: 350px;
+            }
+            .main-content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .main-title{
+                    
+                
+                        line-height: 30px;
+                       
+                        font-size: 25pt;
+                   
+                }
+                .main-text{
+                
+                        
+                    
+                }
+            }
+        }
+    }
+    
+
+
+}

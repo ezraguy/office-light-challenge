@@ -1,0 +1,66 @@
+.pricing{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+    .card{
+        height: 400px;
+        width: 20%;
+        min-width: 250px;
+        box-shadow: .50rem .50rem .50rem .50rem rgba(0,0,0,.075);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+        margin-right: 20px;
+
+        .price{
+            padding-top: 20px;
+            font-size: 26pt;
+            font-weight: bold;
+        }
+
+        .subscription{
+            padding-bottom: 40px;
+        }
+        .storage,.support{
+            padding-top: 50px;
+        }
+       
+        
+    }
+    .card-white{
+        background-color: white;
+        .storage,.support,.desc{
+            color: rgba(128, 128, 128, 0.666);
+            font-weight: 300;
+        }
+    }
+    .card-blue{
+        color: white;
+        background-color: #5075FF;
+        position: relative;
+        .storage,.support,.desc{
+            color: rgba(255, 255, 255, 0.721);
+            font-weight: 300;
+            
+        }
+        .pricingBg{
+           
+            position: absolute;
+            bottom: -120px;
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .pricing{
+        flex-direction: column;
+        align-items: center;
+        .card{
+            margin-bottom: 20px;
+            width: 60%;
+        }
+    }
+}

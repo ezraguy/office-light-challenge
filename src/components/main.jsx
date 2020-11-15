@@ -18,7 +18,7 @@ const Main = () => {
             <div className="main-wrap">
 
 
-                <div className="main-content">
+                <div className="main-content" data-aos="fade-right" data-aos-delay="500">
                     <div >
                         <p className="main-title">A simple solution to complex tasks is coming soon</p>
                     </div>
@@ -27,7 +27,7 @@ const Main = () => {
                     </div>
                     <button className="ui button getStarted">Get started</button>
                 </div>
-                <div className="main-img-wrap">
+                <div className="main-img-wrap" data-aos="fade-left" data-aos-delay="500">
                     <img src={mainPattern} className="main-img" alt="" />
                 </div>
             </div>

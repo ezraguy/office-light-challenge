@@ -1,0 +1,201 @@
+.coming-soon{
+    background-color: #27293A;
+    position: relative;
+    min-height: 600px; 
+    margin-top: 100px;
+    background-image:url('../images/home/bg-pattern-footer.svg');
+    background-repeat: no-repeat;
+    background-position: -700px 40% ;
+    padding-bottom: 300px;
+
+       .count-down{
+           width: 100%;
+           display: flex;
+            padding-left: 10%;
+           color: white;
+           flex-direction: column;
+           .coming-date{
+               font-weight: bold;
+               font-size: 18pt;
+               word-spacing: 5px;
+               span{
+                   color: #5075FF;
+               }
+           }
+
+           .counter{
+               display: flex;
+               .days,.hours,.minutes,.seconds{
+                   p{
+                       text-align: center;
+                       padding-top: 5px;
+                       width: 60px;
+                       border-radius: 7px;
+                       background-color:#333A51 ;
+                       font-size: 30pt;
+                       margin-right: 20px;
+
+                       span{
+                           font-size: 10pt;
+                           color: whitesmoke;
+                       }
+                   }
+               }
+           }
+       }
+
+       .pricing{   
+            top: -150px;
+            position: relative;
+            justify-content: space-around;
+            display: block;
+            left: 0;
+            z-index: 2;
+            display: flex;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 100%;
+
+        .card{
+            
+            height: 400px;
+            width: 20%;
+            min-width: 250px;
+            box-shadow: .50rem .50rem .50rem .50rem rgba(0,0,0,.075);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 20px;
+            text-align: center;
+            
+
+            .desc-wrap{
+                padding-top: 10px;
+            }
+            .price{
+                font-size: 26pt;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+    
+            .subscription{
+                padding-bottom: 30px;
+            }
+            .storage,.support{
+                padding-top: 30px;
+            }
+           
+            &:nth-child(2){
+                background-image: url('../images/home/bg-pattern-pricing.svg');
+                background-position:  center -280px ;
+                background-repeat: no-repeat;
+            }
+
+            .card-btn{
+                cursor: pointer;
+                margin-top: 20px;
+                height: 45px;
+                border:0;
+                outline: 0;
+                color: #5075FF;;
+                background-color:#E4EAFF ;
+                border-radius: 10px;
+                width: 150px;
+            }
+            
+        }
+        .card-white{
+            background-color: white;
+            .storage,.support,.desc{
+                color: rgba(128, 128, 128, 0.666);
+                font-weight: 300;
+            }
+        }
+        .card-blue{
+            overflow: hidden;
+            color: white;
+            background-color: #5075FF;
+            position: relative;
+            .storage,.support,.desc{
+                color: rgba(255, 255, 255, 0.721);
+                font-weight: 300;
+                
+            }
+            .pricingBg{
+               max-width: 100%;
+                position: absolute;
+                top: -70px;
+            }
+
+            .card-btn{
+                background-color: #fff;
+            }
+        }
+    }
+    }
+    
+
+    @media screen and (max-width:850px){
+        .coming-soon{
+       
+            .pricing{
+                flex-direction: column;
+                align-items: center;
+                .card{
+                    position: relative;
+                    padding: 0px 25px 0px 25px;
+                    flex-direction: row;
+                    margin-bottom: 20px;
+                    height: 200px;
+                    width: 80%;
+                    justify-content: space-between;
+                    .desc-wrap{
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 0;
+                        padding-bottom:30px;
+                        span{
+                            padding: 0 ;
+                            width: 100%;
+                            display: block;
+                        }
+                        .desc{
+                            padding-top: 0px;
+                        }
+                        .storage,.support{
+                            padding-top:10px ;
+                        }
+                    }
+                    .card-btn{
+                        position: absolute;
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:534px){
+        .coming-soon{
+            top: 0px;
+            .pricing{
+                .card{
+                    padding-top: 50px;
+                    text-align: center;
+                    width: 60%;
+                    height: 370px;
+                    flex-direction: column;
+                    justify-content: start;
+
+                    .desc-wrap{
+                        padding-top: 0px;
+                       
+                    }
+
+                    .card-btn{
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }

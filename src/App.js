@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 
 
 function App() {
-  Aos.init({ offset: 500, mirror: true, duration: 700 });
+  Aos.init({ duration: 700 });
   return (
     <div className="App">
       <Main />

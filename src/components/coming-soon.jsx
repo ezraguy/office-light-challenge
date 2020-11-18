@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../scss/coming-soon.scss';
 import CountDown from './count-down';
-
+import Aos from 'aos';
 const ComingSoon = () => {
 
     const [cards] = useState([
@@ -11,12 +11,15 @@ const ComingSoon = () => {
         { id: 3, name: 'Ultimate', price: '$19.99', subscription: 'Per user, billed monthly', desc: 'Robust work management', storage: '100 GB storage', support: 'VIP support', background: ' card card-white', delay: 300 }
     ])
     return (
-        <div className="coming-soon">
-            <div className="pricing">
+
+
+        <div className="coming-soon"
+        >
+            <div className="pricing"  >
 
                 {cards.map((card) => {
                     return (
-                        <div className={card.background} key={card.id} data-aos="fade-down" data-aos-delay={card.delay} >
+                        <div className={card.background} key={card.id} data-aos="fade-down" data-aos-delay={card.delay}  >
                             <div className="">
                                 <p className="name">{card.name}</p>
                                 <p className="price">{card.price}</p>

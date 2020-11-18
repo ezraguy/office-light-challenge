@@ -5,18 +5,15 @@ import mainPattern from '../images/home/illustration-charts.svg'
 import '../scss/main.scss';
 import ComingSoon from './coming-soon';
 import Header from './header';
+
 const Main = () => {
     return (
         <React.Fragment>
 
             <div className="main">
-
-
                 <img src={headerBackground} className="headerBackgroundImg" alt="" />
 
                 <div className="main-wrap">
-
-
                     <div className="main-content" data-aos="fade-right" data-aos-delay="500">
                         <div>
                             <p className="main-title">A simple solution to complex tasks is coming soon</p>

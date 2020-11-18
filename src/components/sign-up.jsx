@@ -38,12 +38,12 @@ const SignUp = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="input-wrap">
                         <input type="text" placeholder="Name" name="name" ref={register({ required: true })} />
-                        {errors.name && <span>This cannot be empty</span>}
+                        {errors.name && <span className="err-message">This cannot be empty</span>}
                     </div>
 
                     <div className="input-wrap">
                         <input type="text" name="email" placeholder="Email" ref={register({ required: true })}
-                        />                {errors.email && <span>This cannot be empty</span>}
+                        />                {errors.email && <span className="err-message">This cannot be empty</span>}
                     </div>
                     <div className="input-wrap">
                         <select type="text" name="plan" ref={register({ required: true })}>
@@ -54,13 +54,13 @@ const SignUp = () => {
                     </div>
                     <div className="input-wrap">
                         <input type="text" name="phone" placeholder="Phone Number" ref={register({ required: true })} />
-                        {errors.phone && <span>This cannot be empty</span>}
+                        {errors.phone && <span className="err-message">This cannot be empty</span>}
                     </div>
 
                     <div className="input-wrap">
 
                         <input type="text" name="company" placeholder="Company" ref={register({ required: true })} />
-                        {errors.company && <span>This cannot be empty</span>}
+                        {errors.company && <span className="err-message">This cannot be empty</span>}
                     </div>
 
 

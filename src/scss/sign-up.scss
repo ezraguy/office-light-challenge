@@ -82,10 +82,9 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            span{
+            .err-message{
                 position: absolute;
                 color: red;
-                right: 0px;
                 font-size: 10pt;
                 top:5px;
                 right: 45px;
@@ -110,7 +109,6 @@
       padding: 0;
       padding-top: 100px;
         flex-direction: column;
-      
         z-index: 5;
         
         .img-background-wrap{ 
@@ -141,7 +139,7 @@
             margin-right: auto;
             margin-top: 50px;
             width: 60%;
-            
+            margin-bottom: 100px;
         }
         .count-down-sign-up{
 
@@ -161,6 +159,7 @@
         .form{
             width: 80%;
         }
+        
     }
 
 
@@ -175,4 +174,16 @@
        
     }
     
+}
+
+@media screen and (max-width:600px){
+    .form{
+
+        .input-wrap{
+            .err-message{
+                right:35px !important;
+                top:  45px !important;
+            }
+        }
+    }
 }

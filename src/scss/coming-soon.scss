@@ -8,80 +8,9 @@
     background-position: -700px 40% ;
     padding-bottom: 300px;
     
-    .date-wrap{
-    display: flex;
-    padding-left: 10%;
-
-        .coming-date{
-            font-weight: bold;
-            font-size: 18pt;
-            color: #E4EAFF;
-            word-spacing: 5px;
-            span{
-                color: #5075FF;
-            }
-        }
+    .count-down-main{
+        padding-left: 7%;
     }
-       .count-down{
-           margin-top: 30px;
-           width: 100%;
-           display: flex;
-           padding-left: 10%;
-           color: white;
-           flex-direction: row;
-           justify-content: space-between;
-        padding-right: 10%;
-          
-
-           .counter{
-             
-               display: flex;
-               .days,.hours,.minutes,.seconds{
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                overflow: hidden;
-                height: 100px;
-                margin-bottom: 0;
-                text-align: center;
-                padding-top: 5px;
-                width: 100px;
-                border-radius: 7px;
-                background-color:#333A51 ;  
-                margin: 0 10px 0 10px ;
-
-                   p{
-                    padding-top: 7px;
-                    transition: .3s ease;
-                    font-size: 30pt;
-                    margin-bottom: 0;
-
-                       span{
-                           
-                           font-size: 10pt;
-                           color: whitesmoke;
-                       }
-                   }
-               }
-           }
-
-           .get-started{
-               
-               
-               
-               .get-started-btn{
-                   background-color: #5075FF;
-                   color: white;
-                   border-radius: 15px;
-                   border: 0;
-                   outline: 0;
-                   height: 50px;
-                   cursor: pointer;
-                   width: 120px;
-                   
-                }
-            }
-       }
 
        .pricing{   
             top: -150px;
@@ -135,6 +64,7 @@
                 cursor: pointer;
                 margin-top: 20px;
                 height: 45px;
+                padding-top: 14px;
                 border:0;
                 outline: 0;
                 color: #5075FF;;
@@ -258,6 +188,7 @@
 
                     .card-btn{
                         position: relative;
+                        padding-top: 10px;
                     }
                 }
             }
@@ -266,8 +197,10 @@
                 padding: 0 5% 0 5% ;
               
                 .get-started{
-                    
+                   
+
                     .get-started-btn{
+                        
                         width: 200px ;
                         height: 60px;
                     }

@@ -1,0 +1,178 @@
+
+.sign-up{
+    padding: 100px 7%;
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    .img-background-wrap{
+        height: 100%;
+        width: 350px;
+        z-index: -1;
+        top:0;
+        right: 0;
+        background-color: #27293A;
+        position: fixed;
+        background-image: url('../images/sign-up/bg-pattern-side.svg');
+        background-repeat: no-repeat;
+        background-position:-800px -750px;
+    }
+    
+    .left-panel{
+        display: flex;
+        flex-direction: column;
+        .main-title{
+            max-width: 425px;
+            font-size: 34pt;
+            font-weight: bold;
+            color: rgb(50, 50, 50);
+        }
+        .main-text{
+            max-width: 425px;
+            color: rgba(128, 128, 128, 0.755);
+        }
+
+        .count-down-sign-up{
+            margin-top: 50px;
+        
+            .coming-date{
+                margin-left: 15px;
+                color: black;
+            }
+            .days,.hours,.minutes,.seconds{
+                background-color:#EDEFFE ;
+                color: #4A6DF6;
+            }
+            .get-started{
+                display: none;
+            }
+        }
+    }
+    .form{
+        position: relative;
+        height: 470px;
+        min-width: 200px;
+        width: 400px;
+        z-index: 1;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.619);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+
+       form{
+           width: 100%;
+           text-align: center;
+       }
+
+        .form-submit{
+            cursor: pointer;
+            width: 200px;
+            border: 0;
+            outline: 0;
+            color: white;
+            height: 45px;
+            border-radius: 10px;
+            background-color: #4A6DF6;
+        }
+
+        .input-wrap{
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            span{
+                position: absolute;
+                color: red;
+                right: 0px;
+                font-size: 10pt;
+                top:5px;
+                right: 45px;
+            }
+            input,select{
+                height: 35px;
+                margin-bottom: 40px;
+               width: 100%;
+               width: 80%;
+                border: 0;
+                outline: 0;
+                font-size: 15pt;
+                border-bottom: 1px gray solid;
+                }
+        }
+       
+    }
+}
+
+@media screen and (max-width:990px){
+    .sign-up{
+      padding: 0;
+      padding-top: 100px;
+        flex-direction: column;
+      
+        z-index: 5;
+        
+        .img-background-wrap{ 
+          display: none;
+        }
+        .left-panel{
+           align-items: center;
+           
+           
+            .main-title{
+                max-width: 90%;
+            }
+            .main-text{
+                text-align: center;
+            }
+            .date-wrap{
+                display: flex;
+                justify-content: center;
+                .coming-date{
+                    
+                }
+            }
+            
+        }
+      
+        .form{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            width: 60%;
+            
+        }
+        .count-down-sign-up{
+
+            max-width: 100%;
+            .counter{
+                .days,.hours,.minutes,.seconds{
+                    margin: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:430px){
+
+    .sign-up{
+        .form{
+            width: 80%;
+        }
+    }
+
+
+    .count-down-sign-up{
+
+        max-width: 100%;
+        .counter{
+            .days,.hours,.minutes,.seconds{
+                max-width: 80px;
+            }
+        }
+       
+    }
+    
+}

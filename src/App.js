@@ -4,14 +4,20 @@ import 'semantic-ui-css/semantic.min.css';
 import ComingSoon from './components/coming-soon';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Header from './components/header';
+import { Route, Switch } from 'react-router-dom';
+import SignUp from './components/sign-up';
 
 
 function App() {
   Aos.init({ duration: 700 });
   return (
     <div className="App">
-      <Main />
-      <ComingSoon />
+      <Header />
+      <Switch>
+        <Route exact path="/sign-up" component={SignUp} />
+        <Route path="/" component={Main} />
+      </Switch>
     </div>
   );
 }

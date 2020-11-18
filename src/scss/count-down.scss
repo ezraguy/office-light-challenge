@@ -1,0 +1,75 @@
+.date-wrap{
+    display: flex;
+   
+
+        .coming-date{
+            font-weight: bold;
+            font-size: 18pt;
+            color: #E4EAFF;
+            word-spacing: 5px;
+            span{
+                color: #5075FF;
+            }
+        }
+    }
+       .count-down{
+           margin-top: 30px;
+           width: 100%;
+           display: flex;
+           
+           color: white;
+           flex-direction: row;
+           justify-content: space-between;
+        padding-right: 10%;
+          
+
+           .counter{
+             
+               display: flex;
+               .days,.hours,.minutes,.seconds{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                height: 100px;
+                margin-bottom: 0;
+                text-align: center;
+                padding-top: 5px;
+                width: 100px;
+                border-radius: 7px;
+                background-color:#333A51 ;  
+                margin: 0 10px 0 10px ;
+
+                   p{
+                    padding-top: 7px;
+                    transition: .3s ease;
+                    font-size: 30pt;
+                    margin-bottom: 0;
+
+                       span{
+                           
+                           font-size: 10pt;
+                           color: whitesmoke;
+                       }
+                   }
+               }
+           }
+
+           .get-started{
+            background-color: #5075FF;
+            border-radius: 15px;
+            position: relative;
+            text-align: center;
+            display: flex;
+            height: 50px;
+            cursor: pointer;
+            width: 150px;
+               
+               .get-started-btn{
+                   padding-top: 15px;
+                color: white;     
+                   width: 100%;
+                   height: 100%;
+                }
+            }
+       }

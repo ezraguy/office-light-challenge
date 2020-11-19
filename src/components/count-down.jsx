@@ -53,7 +53,7 @@ const CountDown = () => {
             clearInterval(countInterval);
         }
 
-    }, [])
+    }, [hours, months])
 
 
     return (

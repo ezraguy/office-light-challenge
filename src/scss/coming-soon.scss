@@ -41,6 +41,7 @@
             width: 100%;
 
         .card{
+            
             height: 400px;
             width: 20%;
             min-width: 250px;
@@ -49,14 +50,16 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            padding-top: 15px;
+            padding-top: 35px;
             text-align: center;
             
 
             .desc-wrap{
+                padding-bottom: 20px;
                 padding-top: 10px;
             }
             .price{
+                padding-top: 15px;
                 font-size: 26pt;
                 font-weight: bold;
                 margin-bottom: 0;

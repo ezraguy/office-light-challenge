@@ -21,7 +21,12 @@ const Main = () => {
                         <div >
                             <p className="main-text"> Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new collaboration platform built with an intuitive interface to improve productivity. </p>
                         </div>
-                        <Link className="ui button getStarted" to='/sign-up'>Get started</Link>
+                        <Link to='/sign-up'>
+                            <button className="getStarted">
+
+                                Get started
+                            </button>
+                        </Link>
                     </div>
                     <div className="main-img-wrap" data-aos="fade-left" data-aos-delay="500">
                         <img src={mainPattern} className="main-img" alt="" />

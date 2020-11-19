@@ -13,8 +13,7 @@ const ComingSoon = () => {
     return (
 
 
-        <div className="coming-soon"
-        >
+        <div className="coming-soon">
             <div className="pricing"  >
 
                 {cards.map((card) => {
@@ -40,7 +39,9 @@ const ComingSoon = () => {
 
                 <CountDown />
             </div>
-
+            <div className="attribution">
+                <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by <a href="https://github.com/ezraguy">Guy Ezra</a>.</div>
+            </div>
         </div>
     );
 }

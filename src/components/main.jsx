@@ -4,7 +4,7 @@ import headerBackground from '../images/home/bg-pattern-header.svg'
 import mainPattern from '../images/home/illustration-charts.svg'
 import '../scss/main.scss';
 import ComingSoon from './coming-soon';
-import Header from './header';
+
 
 const Main = () => {
     return (

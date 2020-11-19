@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../scss/coming-soon.scss';
 import CountDown from './count-down';
-import Aos from 'aos';
 const ComingSoon = () => {
 
     const [cards] = useState([

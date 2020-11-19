@@ -3,6 +3,7 @@ import '../scss/sign-up.scss';
 import CountDown from './count-down';
 import { useForm } from "react-hook-form";
 import Swal from 'sweetalert2';
+import 'sweetalert2/src/sweetalert2.scss'
 
 const SignUp = () => {
 
